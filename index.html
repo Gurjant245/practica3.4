@@ -5,9 +5,22 @@
     <link rel="stylesheet" href="style.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prcatica 3.4</title>
+    <title>Prcatica Bloque 3</title>
+ <!-- script javascript     -->
+    <script>
+    
+    function funcion_apellido() {
+      var appelido = document.getElementById("appelido").value;
+      var nom = document.getElementById("name").value;
+      alert ("Bienvenido "+nom+" "+appelido)
+    }
+    
+</script>
 </head>
-<body>
-  
+
+<body >
+    <h1 class="blue">Practica Bloque 3</h1>
+    Introduce tu nombre:  <input type="text" id="name" onblur="funcion_nom()">
+    Introduce tu apellido: <input type="text" id="appelido" onchange="funcion_apellido()">
 </body>
 </html>
